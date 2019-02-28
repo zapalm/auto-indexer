@@ -1,0 +1,27 @@
+{
+  "name": "zapalm/autoindex",
+  "type": "library",
+  "description": "Recursively adds a index.php file in all given directories.",
+  "keywords": [
+    "directory-traversal-vulnerability",
+    "security",
+    "vulnerability",
+    "php-library"
+  ],
+  "homepage": "https://prestashop.modulez.ru/en/tools-scripts/78-php-auto-indexer.html",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Maksim T.",
+      "email": "zapalm@yandex.com",
+      "role": "Developer"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=5.2"
+  },
+  "config": {
+    "preferred-install": "dist"
+  }
+}
