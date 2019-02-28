@@ -13,12 +13,17 @@ php index.php (--add or --remove) (The directory path for recursively adding or 
 
 Example #1: adding new `index.php` files without overwrite existing one.  
 ```
-php index.php --add ../../.. ../builder/templates/index.php
+php index.php --add ../../.. ./templates/redirect-to-previous-directory.php
 ```
 Example #2: cleaning a directory of old index.php files.
 ```
 php index.php --remove ../../..
 ```
+
+## Available templates for index.php
+These are templates for popular methods to prevent directory traversal:
+- The template `error-404.php` is used to show *error 404 - a page not found*.
+- The template `redirect-to-previous-directory.php` is used to do the redirect to a previous directory.
 
 ## Installation
 **Just download the archive and use the tool by described instruction. See homepage for the last stable release.**
