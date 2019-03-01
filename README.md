@@ -37,7 +37,7 @@ You can also use this tool in your project by adding the dependency directly to 
   }
 ],
 "require": {
-  "php": ">=5.2",
+  "php": ">=5.3",
   "zapalm/autoIndexer": "dev-master"
 },
 ```
