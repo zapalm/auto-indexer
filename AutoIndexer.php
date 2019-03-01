@@ -6,7 +6,7 @@
  * @copyright 2019 Maksim T.
  * @license   https://opensource.org/licenses/MIT MIT
  * @link      https://github.com/zapalm/autoIndexer GitHub
- * @link      https://prestashop.modulez.ru/en/tools-scripts/78-php-auto-indexer.html Homepage
+ * @link      https://prestashop.modulez.ru/en/tools-scripts/78-tool-against-directory-traversal-security-vulnerability.html Homepage
  */
 
 namespace zapalm;

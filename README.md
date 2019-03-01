@@ -80,4 +80,4 @@ Contributors wishing to edit the project's files should follow the following pro
 [2]: https://www.patreon.com/zapalm
 [3]: https://flattr.com/@zapalm
 [4]: https://help.github.com/articles/about-pull-requests/
-[5]: https://prestashop.modulez.ru/en/tools-scripts/78-php-auto-indexer.html
+[5]: https://prestashop.modulez.ru/en/tools-scripts/78-tool-against-directory-traversal-security-vulnerability.html
