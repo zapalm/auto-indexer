@@ -14,8 +14,6 @@ namespace zapalm;
 /**
  * Auto indexer.
  *
- * @version 1.0.0
- *
  * @author Maksim T. <zapalm@yandex.com>
  */
 class AutoIndexer

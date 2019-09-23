@@ -7,8 +7,6 @@
  * @license   https://opensource.org/licenses/MIT MIT
  * @link      https://github.com/zapalm/autoIndexer GitHub
  * @link      https://prestashop.modulez.ru/en/tools-scripts/78-tool-against-directory-traversal-security-vulnerability.html Homepage
- *
- * @version 1.0.0
  */
 
 require __DIR__ . DIRECTORY_SEPARATOR . 'AutoIndexer.php';

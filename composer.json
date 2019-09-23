@@ -1,6 +1,7 @@
 {
   "name": "zapalm/autoIndexer",
   "type": "library",
+  "version": "1.0.1",
   "description": "Recursively adds a index.php file in all given directories.",
   "keywords": [
     "directory-traversal-vulnerability",
