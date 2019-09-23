@@ -21,10 +21,12 @@ if ($argc >= 3) {
     array_shift($argv);
     $command = trim(array_shift($argv));
     if ('--add' === $command) {
-        (new \zapalm\AutoIndexer(array_shift($argv), array_shift($argv)))->addIndex();
+        $autoIndexer = new \zapalm\AutoIndexer(array_shift($argv), array_shift($argv));
+        $autoIndexer->addIndex();
         exit(0);
     } elseif ('--remove' === $command) {
-        (new \zapalm\AutoIndexer(array_shift($argv)))->removeIndex();
+        $autoIndexer = new \zapalm\AutoIndexer(array_shift($argv));
+        $autoIndexer->removeIndex();
         exit(0);
     }
 }
