@@ -97,7 +97,11 @@ class AutoIndexer
     private function addIndexRecursively($path)
     {
         // Skip special directories such as .git, .idea and so on.
-        if (0 === strpos(basename($path), '.')) {
+        $skipExclusions = array(
+            '.github',
+        );
+        $fileName = basename($path);
+        if (0 === strpos($fileName, '.') && false === in_array($fileName, $skipExclusions)) {
             echo 'Skip: ' . $path . PHP_EOL;
 
             return;
