@@ -11,6 +11,8 @@
 
 namespace zapalm;
 
+use LogicException;
+
 /**
  * Auto indexer.
  *
@@ -30,7 +32,7 @@ class AutoIndexer
      * @param string      $directoryPath The path to the source directory for recursively adding or removing the index.php file.
      * @param string|null $templatePath  The path to the template file (index.php) for adding.
      *
-     * @throws \LogicException
+     * @throws LogicException
      *
      * @author Maksim T. <zapalm@yandex.com>
      */
@@ -38,13 +40,13 @@ class AutoIndexer
     {
         $this->directoryPath = realpath($directoryPath);
         if (false === file_exists($this->directoryPath)) {
-            throw new \LogicException('The source directory path is not exists: ' . $this->directoryPath);
+            throw new LogicException('The source directory path is not exists: ' . $this->directoryPath);
         }
 
         if (null !== $templatePath) {
             $this->templatePath = realpath($templatePath);
             if (false === file_exists($this->templatePath)) {
-                throw new \LogicException('The template path is not exists: ' . $this->templatePath);
+                throw new LogicException('The template path is not exists: ' . $this->templatePath);
             }
         }
     }
@@ -56,14 +58,14 @@ class AutoIndexer
      *
      * @see removeIndex()
      *
-     * @throws \LogicException
+     * @throws LogicException
      *
      * @author Maksim T. <zapalm@yandex.com>
      */
     public function addIndex()
     {
         if (null === $this->templatePath) {
-            throw new \LogicException('The template path is not configured.');
+            throw new LogicException('The template path is not configured.');
         }
 
         $this->addIndexRecursively($this->directoryPath);

@@ -9,6 +9,8 @@
  * @link      https://prestashop.modulez.ru/en/tools-scripts/78-tool-against-directory-traversal-security-vulnerability.html Homepage
  */
 
+use zapalm\AutoIndexer;
+
 require __DIR__ . DIRECTORY_SEPARATOR . 'AutoIndexer.php';
 
 if ('cli' !== php_sapi_name()) {
@@ -19,11 +21,11 @@ if ($argc >= 3) {
     array_shift($argv);
     $command = trim(array_shift($argv));
     if ('--add' === $command) {
-        $autoIndexer = new \zapalm\AutoIndexer(array_shift($argv), array_shift($argv));
+        $autoIndexer = new AutoIndexer(array_shift($argv), array_shift($argv));
         $autoIndexer->addIndex();
         exit(0);
     } elseif ('--remove' === $command) {
-        $autoIndexer = new \zapalm\AutoIndexer(array_shift($argv));
+        $autoIndexer = new AutoIndexer(array_shift($argv));
         $autoIndexer->removeIndex();
         exit(0);
     }
