@@ -5,7 +5,7 @@
  * @author    Maksim T. <zapalm@yandex.com>
  * @copyright 2019 Maksim T.
  * @license   https://opensource.org/licenses/MIT MIT
- * @link      https://github.com/zapalm/autoIndexer GitHub
+ * @link      https://github.com/zapalm/auto-indexer GitHub
  * @link      https://prestashop.modulez.ru/en/tools-scripts/78-tool-against-directory-traversal-security-vulnerability.html Homepage
  */
 

@@ -33,12 +33,12 @@ You can also use this tool in your project by adding the dependency directly to 
 "repositories": [
   {
     "type": "vcs",
-    "url": "https://github.com/zapalm/autoIndexer"
+    "url": "https://github.com/zapalm/auto-indexer"
   }
 ],
 "require": {
   "php": ">=5.3",
-  "zapalm/autoIndexer": "dev-master"
+  "zapalm/auto-indexer": "dev-master"
 },
 ```
 
