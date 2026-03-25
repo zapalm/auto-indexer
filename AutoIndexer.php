@@ -52,9 +52,9 @@ class AutoIndexer
     }
 
     /**
-     * Adds index.php files to the configured path.
+     * Adds index.php files to the specified path.
      *
-     * It's do not replaces the existing index.php files.
+     * This does not replace existing index.php files.
      *
      * @see removeIndex()
      *
